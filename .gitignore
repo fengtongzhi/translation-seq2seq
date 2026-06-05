@@ -1,0 +1,113 @@
+# ─── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ─── 虚拟环境 ──────────────────────────────────────────────────────────────────
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+conda-meta/
+
+# ─── Jupyter Notebook ─────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+profile_default/
+ipython_config.py
+
+# ─── 模型文件（体积大，不适合放 Git）─────────────────────────────────────────────
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.hdf5
+*.pb
+*.onnx
+*.bin
+*.safetensors
+checkpoints/
+saved_models/
+weights/
+
+# ─── 数据集（同上，用 DVC 或云存储管理）──────────────────────────────────────────
+data/raw/
+data/processed/
+data/external/
+*.csv
+*.tsv
+*.json
+*.jsonl
+*.parquet
+*.npy
+*.npz
+*.pkl
+*.pickle
+
+# ─── 训练日志 / 实验追踪 ────────────────────────────────────────────────────────
+runs/
+logs/
+outputs/
+wandb/
+mlruns/
+lightning_logs/
+tensorboard/
+events.out.tfevents.*
+
+# ─── 构建 / 分发 ───────────────────────────────────────────────────────────────
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+MANIFEST
+
+# ─── 测试 / 覆盖率 ─────────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+
+# ─── IDE ──────────────────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.swp
+*.swo
+*~
+
+# ─── 系统文件 ──────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── 环境变量 / 密钥（绝对不能提交）─────────────────────────────────────────────
+.env
+.env.local
+.env.*
+secrets.yaml
+secrets.json
+*.key
+*.pem
+
+# ─── AI Agent 配置目录 ────────────────────────────────────────────────────────
+.claude/
+.reasonix/
+.cursor/
+.continue/
+.aider*
+.copilot/
