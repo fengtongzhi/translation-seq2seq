@@ -2,7 +2,6 @@ import pandas as pd
 import torch
 from torch.nn.utils.rnn import pad_sequence
 from torch.utils.data import Dataset, DataLoader
-
 from src import config
 
 # <pad> 在词表中总是索引 0（由 tokenizer.BaseTokenizer.build_vocab 保证）
